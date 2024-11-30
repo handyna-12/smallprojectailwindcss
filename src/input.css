@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities{
+  .banner-background{
+    @apply bg-[url(./public/hero.jpg)] lg:bg-fixed;
+} 
+  input[type="checkbox"]:checked + .icon-menu{
+    @apply block bg-[url(./public/cencel.svg)] bg-no-repeat;
+  }
+  input[type="checkbox"]:checked ~ nav{
+    @apply flex;
+    & .icon-menu{
+      @apply block bg-[url(./public/menu.svg)] bg-no-repeat;
+      width: 48px;
+      height: 48px; 
+      background-color: aqua;
+  }
+  }
+    & .slider {
+        @apply py-2;
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+      
+        &::-webkit-scrollbar {
+          @apply hidden;
+        }
+      
+        & .card-slider {
+          @apply px-2 py-1;
+          aspect-ratio: 24 / 10;
+          border: 1px solid #f7d6dc;
+          display: flex;
+          place-content: center;
+          place-items: center;
+        }
+      }
+.box-produck:hover .add-to-card{
+  @apply block;
+}
+.add-to-card:hover + .labale{
+  @apply block;
+}
+      
+}
