@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="w-full flex justify-between items-center bg-white px-6 py-3">
+      <img src="public/image.png" alt="" />
+
+      <nav class="max-md:hidden flex gap-4 lg:gap-8 duration-300">
+        <a class="hover:text-primary" href="#">Shop All</a>
+        <a class="hover:text-primary" href="#">Makeup</a>
+        <a class="hover:text-primary" href="#">Skin Care</a>
+        <a class="hover:text-primary" href="#">Hair Care</a>
+        <a class="hover:text-primary" href="#">About</a>
+        <a class="hover:text-primary" href="#">Contact</a>
+      </nav>
+
+      <article class="max-md:hidden flex items-center gap-3">
+        <img class="size-6" src="public/horo.svg" alt="" />
+        <p class="text-lg font-semibold">$ 0.00</p>
+        <div class="relative flex items-center size-8">
+          <img class="size-6" src="public/user-stroke-rounded.svg" alt="" />
+          <div
+            class="size-4 absolute top-0 right-0 text-sm text-center flex items-center justify-center text-white bg-green-400 rounded-full"
+          >
+            0
+          </div>
+        </div>
+      </article>
+      <label class="max-md:hidden produck size-8 p-1">
+        <input type="checkbox"  class="hidden">
+        <span class="icon-menu"></span>
+
+        <nav
+          class="absolute left-0 px-6 py-4 w-full hidden flex-col gap-4 bg-white"
+        >
+          <a class="hover:text-primary focus:text-primary" href="#">Shop All</a>
+          <a class="hover:text-primary focus:text-primary" href="#">Makeup</a>
+          <a class="hover:text-primary focus:text-primary" href="#">Skin Care</a
+          >
+          <a class="hover:text-primary focus:text-primary" href="#">Hair Care</a>
+          <a class="hover:text-primary focus:text-primary" href="#">About</a>
+          <a class="hover:text-primary focus:text-primary" href="#">Contact</a>
+        </nav>
+      </label>
+    </header>
+    <section class="w-full h-[65vh] lg:h-[150vh] p-4">
+      <main
+        class="w-full h-[65%] lg:h-[80%] px-8 md:px-24 lg:px-32 text-white banner-background bg-center bg-no-repeat bg-cover"
+        style="background-image: url(public/hero.jpg)"
+      >
+        <div
+          class="w-full md:w-[40%] lg:w-[45%] h-full flex flex-col justify-center"
+        >
+          <span class="text-[12px] drop-shadow-lg">New in town</span>
+          <h1 class="text-2xl md:text-3xl lg:text-6xl mt-2 drop-shadow-lg">
+            The <span class="text-red-500">new</span> beauty collection
+          </h1>
+          <p class="text-sm md:text-base lg:text-lg mt-4 drop-shadow-lg">
+            This new collection brings with it the most exciting lorem ipsum
+            dolor sit amet.
+          </p>
+          <button
+            class="w-24 md:w-32 px-2 py-1 md:px-3 md:py-2 text-sm md:text-base bg-white text-black hover:text-primary duration-300 mt-8 md:mt-4 rounded-sm"
+          >
+            SHOP NOW
+          </button>
+        </div>
+      </main>
+      <article class="w-full h-[35%] lg:h-[20%] py-2">
+        <aside class="slider">
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/logo-008.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/logo-004.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/image copy 2.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/image copy 3.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/image copy 4.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/ii.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/logo-008.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/logo-004.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/image copy 2.png" alt="" />
+          </div>
+          <div class="card-slider">
+            <img src="public/image copy 3.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/image copy 4.png" alt="" />
+          </div>
+          <div data-aos="zoom-out-left" class="card-slider">
+            <img src="public/ii.png" alt="" />
+          </div>
+        </aside>
+        
+      </article>
+      <div class="flex place-content-center place-items-center w-full ">
+        <li class="size-16 w-10 h-10 text-green-500"></li>
+        <li class="size-16 w-10 h-10 text-green-500"></li>
+        <li class="size-16 w-10 h-10 text-green-500"></li>
+        <li class="size-16 w-10 h-10 text-green-500"></li>
+        <li class="size-16 w-10 h-10 text-green-500"></li>
+      </div>
+    </section>
+    <section class="w-full">
+      <aside
+        class="w-full h-[100px] grid place-content-center place-items-center p-8"
+      >
+        <p class="font-light text-gray-600">Papular</p>
+        <h1 class="text-5xl font-thin mb-3 font-semibold">Trending Now</h1>
+      </aside>
+      <article
+        class="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5"
+      >
+        <div
+          data-aos="zoom-in-left"
+          class="w-full box-produck bg-white rounded-lg relative"
+        >
+          <img
+            class="w-full h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-04-a-400x488.jpg"
+            alt=""
+          />
+
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4 gap-1">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light">Product Name 1</h1>
+          <p class="mb-3">
+            <span class="text-gray-400"><del>$75.00</del></span
+            >$59.00
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="w-full box-produck bg-white relative rounded-lg"
+        >
+          <img
+            class="w-full h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-09-a-400x488.jpg"
+            alt=""
+          />
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card" >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light text-red-600">Product Name 10</h1>
+          <p>
+            <span class="text-gray-300"><del>$75.00</del></span
+            >$59.00
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="w-full box-produck bg-white rounded-lg relative"
+        >
+          <img
+            class="w-full  h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-10-a-400x488.jpg"
+            alt=""
+          />
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light text-purple-400">Product Name 11</h1>
+          <p>
+            <span class="text-gray-400"><del>$75.00 </del></span>$59.00
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="w-full box-produck relative bg-white rounded-lg"
+        >
+          <img
+            class="w-full h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-14-a-400x488.jpg"
+            alt=""
+          />
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light text-sky-600">Product Name 12</h1>
+          <p>
+            <span class="text-gray-400"><del>$75.00</del></span
+            >.$59.00
+          </p>
+        </div>
+      </article>
+    </section>
+    <section class="w-full mt-20">
+      <aside
+        class="w-full mb-5 h-[100px] grid place-content-center place-items-center p-8"
+      >
+        <p class="font-light text-gray-600">Shop</p>
+        <h1 class="text-5xl  mb-3 font-semibold">Best slelling</h1>
+      </aside>
+      <article
+        class="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5"
+      >
+        <div
+          data-aos="zoom-in-left"
+          class="w-full box-produck bg-white rounded-lg relative box-content"
+        >
+          <img
+            class="w-full h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-04-a-400x488.jpg"
+            alt=""
+          />
+
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button type="button"
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4 gap-1">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light">Product Name 1</h1>
+          <p class="mb-3">
+            <span class="text-gray-400"><del>$75.00</del></span
+            >$59.00
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="w-full box-produck bg-white relative rounded-lg"
+        >
+          <img
+            class="w-full h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-09-a-400x488.jpg"
+            alt=""
+          />
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light text-red-600">Product Name 10</h1>
+          <p>
+            <span class="text-gray-300"><del>$75.00</del></span
+            >$59.00
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="w-full box-produck bg-white rounded-lg relative"
+        >
+          <img
+            class="w-full  h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-10-a-400x488.jpg"
+            alt=""
+          />
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light text-purple-400">Product Name 11</h1>
+          <p>
+            <span class="text-gray-400"><del>$75.00 </del></span>$59.00
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="w-full box-produck relative bg-white rounded-lg"
+        >
+          <img
+            class="w-full h-60 object-cover md:h-72 xl:h-96"
+            src="public/product-14-a-400x488.jpg"
+            alt=""
+          />
+          <button
+            class="absolute top-4 left-4 bg-white rounded-lg py-1 px-4 shadow-md"
+          >
+            sale!
+          </button>
+          <button
+            class="absolute top-4 right-4 bg-white rounded-full py-2 hidden px-2 add-to-card"
+          >
+            <img
+              class="size-7"
+              src="public/favorite_51dp_75FBFD_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </button>
+          <p
+            class="px-2 top-5 right-14 py-1 bg-black absolute text-white rounded-md labale hidden"
+          >
+            add to card
+          </p>
+          <div class="flex w-full h-4">
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <img
+              src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="font-light text-sky-600">Product Name 12</h1>
+          <p>
+            <span class="text-gray-400"><del>$75.00</del></span
+            >.$59.00
+          </p>
+        </div>
+      </article>
+    </section>
+    <section 
+     class="w-full h-[65vh] lg:h-[110vh] p-4 ">
+      <main
+        class="w-full h-[65%] lg:h-[80%] px-8 md:px-24 lg:px-32 banner-background bg-cover text-white banner-background bg-center bg-no-repeat "
+        style="background-image: url(public/bg-03.jpg)"
+      >
+        <div
+          class="w-full lg:text-3xl md:w-[40%] lg:w-[45%] h-full flex flex-col justify-center"
+        >
+          <span class="text-[12px] drop-shadow-lg text-emerald-300">New in town</span>
+          <h1 class="text-2xl md:text-3xl lg:text-6xl mt-2 drop-shadow-lg">
+            The <span class="text-pink-400">new</span> beauty collection
+          </h1>
+          <p class="text-sm md:text-base lg:text-lg mt-4 drop-shadow-lg">
+            This new collection brings with it the most exciting lorem ipsum
+            dolor sit amet.
+          </p>
+          <button
+            class="w-24 md:w-32 px-2 py-1 md:px-3 md:py-2 text-sm md:text-base bg-white text-black hover:text-primary duration-300 mt-8 md:mt-4 rounded-sm"
+          >
+            SHOP NOW
+          </button>
+        </div>
+      </main>
+    </section>
+    <section class="w-full justify-start items-start px-4 py-6 grid grid-cols-1 md:grid-cols-2">
+        <main class="flex flex-col gap-4">
+          <p class="text-gray-400">Jane Oliver</p>
+          <h1 class="lg:text-3xl font-bold text-ellipsis truncate line-clamp-3 text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta error ratione facilis, fuga deserunt, illum, quibusdam possimus voluptates corporis reprehenderit animi rerum deleniti cum maiores! Repellat vero sit voluptate iusto.</h1>
+          <hr class="w-14   text-amber-500" color="#0075FD" size="1.5">
+        </main>
+        <aside class="flex flex-col gap-2 mt-10 md:mt-0">
+          <div class="flex flex-col gap-2">
+            <ul class="flex">
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            </ul>
+              <h1 class="truncate text-wrap line-clamp-3 font-bold lg:font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio recusandae dolores eligendi assumenda blanditiis quaerat labore eius veritatis eum magnam nam, dolorum numquam neque harum! Harum fugiat eligendi numquam praesentium.</h1>
+              <p class="text-gray-500">James Oliver</p>
+              <hr class="w-14 text-pink-600" color="#0075FD" size="1.5" >
+          </div>
+          <div class="flex flex-col gap-2 mt-5">
+            <ul class="flex">
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            </ul>
+              <h1 class="truncate text-wrap line-clamp-3 font-bold lg:font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio recusandae dolores eligendi assumenda blanditiis quaerat labore eius veritatis eum magnam nam, dolorum numquam neque harum! Harum fugiat eligendi numquam praesentium.</h1>
+              <p class="text-gray-500">James Oliver</p>
+              <hr class="w-14 text-pink-600" color="#0075FD" size="1.5" >
+          </div>
+          <div class="flex flex-col gap-2 mt-5">
+            <ul class="flex">
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+              <li><img src="public/star_rate_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            </ul>
+              <h1 class="truncate text-wrap line-clamp-3 font-bold lg:font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio recusandae dolores eligendi assumenda blanditiis quaerat labore eius veritatis eum magnam nam, dolorum numquam neque harum! Harum fugiat eligendi numquam praesentium.</h1>
+              <p class="text-gray-500">James Oliver</p>
+              <hr class="w-14 text-pink-600" color="#0075FD" size="1.5" >
+          </div>
+        </aside>
+    </section>
+    <section class="gap-2  p-5 w-full lg:h-[70vh]   mt-28 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
+      <section 
+     class="w-full h-[65vh] lg:h-[80vh] ">
+      <main
+        class="w-full h-[95%] lg:h-[80%] px-8  bg-cover text-white  bg-center bg-no-repeat "
+        style="background-image: url(public/bg-02.jpg)"
+      >
+        <div
+          class="w-full lg:text-3xl md:w-[40%] lg:w-[45%] h-full flex flex-col justify-center"
+        >
+          <span class="text-[12px] drop-shadow-lg text-emerald-300">New in town</span>
+          <h1 class="text-2xl md:text-3xl lg:text-3xl mt-2 drop-shadow-lg">
+            The <span class="text-pink-400">new</span> beauty collection
+          </h1>
+          <p class="text-sm md:text-base lg:text-lg mt-4 drop-shadow-lg">
+            This new collection brings with it the most exciting lorem ipsum
+            dolor sit amet.
+          </p>
+          <button
+            class="w-24 md:w-32 px-2 py-1 md:px-3 md:py-2 text-sm md:text-base bg-white text-black hover:text-primary duration-300 mt-8 md:mt-4 rounded-sm"
+          >
+            SHOP NOW
+          </button>
+        </div>
+      </main>
+    </section>
+    <section 
+     class="w-full h-[65vh] lg:h-[80vh] ">
+      <main
+        class="w-full h-[95%] lg:h-[80%] px-8  text-white  bg-center bg-cover bg-no-repeat "
+        style="background-image: url(public/image\ copy\ 5.png)"
+      >
+        <div
+          class="w-full lg:text-3xl md:w-[40%] lg:w-[45%] h-full flex flex-col justify-center"
+        >
+          <span class="text-[12px] drop-shadow-lg text-emerald-300">New in town</span>
+          <h1 class="text-2xl md:text-3xl lg:text-3xl mt-2 drop-shadow-lg">
+            The <span class="text-pink-400">new</span> beauty collection
+          </h1>
+          <p class="text-sm md:text-base lg:text-lg mt-4 drop-shadow-lg">
+            This new collection brings with it the most exciting lorem ipsum
+            dolor sit amet.
+          </p>
+          <button
+            class="w-24 md:w-32 px-2 py-1 md:px-3 md:py-2 text-sm md:text-base bg-white text-black hover:text-primary duration-300 mt-8 md:mt-4 rounded-sm"
+          >
+            SHOP NOW
+          </button>
+        </div>
+      </main>
+    </section>
+  </section>
+    <section class="w-full  py-11 grid grid-cols-1 items-center justify-center place-content-center  sm:grid-cols-1 lg:grid-cols-4  ">
+     
+      <div class="w-full flex flex-col items-center ">
+        <h1 class="font-light text-gray-400">banner-background</h1>
+        <hr class="w-14 text-pink-600 mt-3" color="#0075FD" size="1.5" >
+      </div>
+      <div class="w-full flex flex-col items-center  mt-5">
+        <img class="bg-pink-100   py-2 px-2 rounded-full size-14  hover:bg-slate-600" src="public/delivery_truck_speed_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h1 class="font-serif text-center w-full mt-4 ">Fast Delivery</h1>
+        <p class="text-center lg:text-start px-7  ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+      </div>
+      <div class="flex flex-col items-center mt-5">
+        <img class="bg-pink-100 size-14 py-2 px-2 rounded-full hover:bg-slate-600" src="public/garden_cart_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h1 class="font-serif mt-4">Fast Delivery</h1>
+        <p class="text-center lg:text-start px-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+      </div>
+      <div class="flex flex-col items-center  mt-5">
+        <img class="bg-pink-100 size-14 py-2 px-2 rounded-full hover:bg-slate-600" src="public/keyboard_return_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h1 class="font-serif mt-4">Fast Delivery</h1>
+        <p class="text-center px-7 lg:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+      </div>
+     
+    </section>
+    <footer class="bg-pink-50  m-7 ">
+      <!-- Newsletter Subscription Section -->
+      <div class=" container mx-auto text-center md:grid-cols-2 py-8 lg:flex items-center justify-between px-12  ">
+        <h3 class="text-lg font-semibold text-gray-300 font-serif ">Subscribe to our newsletter</h3>
+        <div class="mt-4 flex flex-col  sm:flex-row sm:justify-center gap-3 ">
+          <input
+            type="email"
+            placeholder="Your email address..."
+            class="w-full max-w-md  sm:px-20  py-4 border border-gray-300   focus:outline-none focus:ring-2 focus:ring-pink-500"
+          />
+          <button
+            class="w-full sm:w-auto px-10 py-2 bg-black text-white font-semibold   hover:bg-pink-500"
+          >
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <hr class="w-full text-pink-600" color="#0075FD" size="2.5" >
+      <!-- Footer Links Section -->
+      <div class="py-8   border-gray-300 py-24">
+        <div class="mx-auto grid grid-cols-1   sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-1">
+          <!-- Logo Section -->
+          <div class=" lg:text-left flex flex-col  items-center place-content-center">
+            <img class="items-center" src="public/image.png" alt="">
+            <p class="text-sm text-gray-600 mt-1">BEAUTY STORE</p>
+          </div>
+    
+          <!-- Navigation Links Section -->
+          <div class="ml-[400px] w-[200px] flex items-center place-content-center lg:text-left">
+            
+          </div>
+    
+          <!-- Additional Links Section -->
+          <div class="text-center  lg:text-left lg:flex lg:flex-col lg:items-center lg:place-content-center">
+            
+          </div>
+    
+          <!-- Social Media Icons or Extra Space -->
+          <div class="lg:text-left font-bold  flex items-center place-content-center">
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Shop All</a></li>
+              <li><a href="#" class="hover:underline">Makeup</a></li>
+              <li><a href="#" class="hover:underline">Skin Care</a></li>
+              <li><a href="#" class="hover:underline">Hair Care</a></li>
+              <li><a href="#" class="hover:underline">About</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+           
+          </div>
+            <div class="text-center font-bold  lg:text-left lg:flex lg:flex-col lg:items-center lg:place-content-center">
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Refund Policy</a></li>
+                <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                <li><a href="#" class="hover:underline">FAQ</a></li>
+                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+              </ul>
+            </div>
+          <div class="lg:text-left flex items-center place-content-center">
+            <a href="#"><img class="size-10" src="public/flutter_dash_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+            <a href="#"><img class="size-10" src="public/local_florist_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+            <a href="#"><img class="size-10" src="public/horo.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full text-pink-600" color="#0075FD" size="2.5" >
+    
+      <!-- Copyright Section -->
+      <div class="bg-pink-50 py-4 border-t border-gray-200">
+        <div class="container mx-auto text-center text-sm text-gray-600">
+          <p class="lg:text-start px-12 lg:text-2xl py-12" >Copyright © 2024 Be Bold | Powered by Be Bold</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
